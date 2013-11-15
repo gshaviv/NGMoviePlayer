@@ -48,10 +48,6 @@ NS_INLINE NSString* NGAVLayerVideoGravityNext(NSString *gravity) {
         return AVLayerVideoGravityResizeAspectFill;
     }
     
-    if ([gravity isEqualToString:AVLayerVideoGravityResizeAspectFill]) {
-        return AVLayerVideoGravityResize;
-    }
-    
     // default
     return AVLayerVideoGravityResizeAspect;
 }
