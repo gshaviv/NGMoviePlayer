@@ -78,7 +78,7 @@
     CGSize windowSize = self.moviePlayer.view.window.bounds.size;
     CGSize playerViewSize = self.moviePlayer.view.frame.size;
     CGSize playerViewInvertedSize = CGSizeMake(playerViewSize.height, playerViewSize.width);
-    if (CGSizeEqualToSize(windowSize, playerViewSize) || CGSizeEqualToSize(windowSize, playerViewInvertedSize)) {
+    if ((CGSizeEqualToSize(windowSize, playerViewSize) || CGSizeEqualToSize(windowSize, playerViewInvertedSize)) && ![[UIApplication sharedApplication] isStatusBarHidden]) {
         topControlsViewTop = 20.f;
     }
 
