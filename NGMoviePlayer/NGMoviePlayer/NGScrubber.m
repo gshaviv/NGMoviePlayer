@@ -28,7 +28,7 @@
 	[[UIColor colorWithWhite:0.2f alpha:0.8f] setFill];
     
     // Create the path for the rounded rectangle
-    CGRect roundedRect = CGRectMake(self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, floorf(self.bounds.size.height * 0.8));
+    CGRect roundedRect = CGRectMake(self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, floor(self.bounds.size.height * 0.8));
     UIBezierPath *roundedRectPath = [UIBezierPath bezierPathWithRoundedRect:roundedRect cornerRadius:6.0];
     
     // Create the arrow path
